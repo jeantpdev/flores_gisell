@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 17, 17);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.greetings{
+    font-size: 10vw;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+.texto_sarita{
+    font-size: 7vw;
+}
+
+.description{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: #111;
+}
+
+.description{
+    color: white;
+}
+
+/* Estilo para el botón */
+.button button {
+    background-color: rgb(241, 241, 17); /* Fondo amarillo */
+    border: none; /* Sin bordes */
+    cursor: pointer;
+    position: relative; /* Necesario para el resplandor */
+    border-radius: 0.5vw; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+    padding: 1.5vw;
+}
+  
+  /* Estilo para el enlace dentro del botón */
+  .button button a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del botón */
+    font-size: 1.5vw; /* Tamaño de fuente */
+    font-weight: 100;
+  }
+  
+  /* Efecto de resplandor al pasar el cursor sobre el botón */
+  .button button:hover {
+    background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
+  }
+  
+  @media screen and (max-width:600px){
+
+    .texto_sarita{
+        font-size: 15vw;
+    }
+
+    .greetings{
+        display: block;
+        font-size: 20vw;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 7vw;
+    }
+
+    .button button a {
+        font-size: 6vw; /* Tamaño de fuente */
+        font-weight: 100;
+      }
+}
